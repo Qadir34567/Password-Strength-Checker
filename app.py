@@ -37,7 +37,7 @@ def check_password_strength(password):
         feedback.append("Include at least one number (0-9).")
 
     # Check for special characters
-    if re.search(r"[!@#$%^&*]", password):
+    if re.search(r"[!@#$<>:!@*%^&*]", password):
         score += 1
     else:
         feedback.append("Include at least one special character (!@#$%^&*).")
